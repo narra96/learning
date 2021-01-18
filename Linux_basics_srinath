@@ -1,0 +1,141 @@
+pwd command is used to know the current directory.
+srinath@srinath-VirtualBox:~$ pwd
+/home/srinath
+
+ls command is used to know files in the directory.
+srinath@srinath-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+
+ls-a command is used to know all the files including hidden files.
+srinath@srinath-VirtualBox:~$ ls -a
+.              Downloads  snap
+..             .gnupg     .ssh
+.bash_history  .local     .sudo_as_admin_successful
+.bash_logout   .mozilla   Templates
+.bashrc        Music      .vboxclient-clipboard.pid
+.cache         Pictures   .vboxclient-display-svga-x11.pid
+.config        .pki       .vboxclient-draganddrop.pid
+Desktop        .profile   Videos
+Documents      Public     .wget-hsts
+
+cd command is used to change the directory, from one folder to another folder.
+srinath@srinath-VirtualBox:~$ cd Desktop
+srinath@srinath-VirtualBox:~/Desktop$ 
+
+cd .. command is used to go back to the previous folder of the directory.
+srinath@srinath-VirtualBox:~/Desktop$ cd ..
+srinath@srinath-VirtualBox:~$ 
+
+mkdir command is used to make a folder in that directory.
+srinath@srinath-VirtualBox:~$ mkdir Git_Local_Repository
+srinath@srinath-VirtualBox:~$ ls
+Desktop    Downloads             Music     Public  Templates
+Documents  Git_Local_Repository  Pictures  snap    Videos
+
+mv command is used to move the folder from one directory to another directory.
+srinath@srinath-VirtualBox:~$ mv Git_Local_Repository /home/srinath/Desktop
+srinath@srinath-VirtualBox:~/Desktop$ ls
+Git_Local_Repository
+
+mv file is also used to change the name of the file/folder.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository$ ls
+dummy
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository$ mv dummy dummy1
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository$ ls
+dummy1
+
+touch command is used to create file.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ touch dummy.txt
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ ls
+dummy.txt
+
+
+rm is used to remove the file in the directory.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ ls
+dummy.txt
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ rm dummy.txt
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ ls
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ ^C
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ ls
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy1$ 
+
+rm -r is used to remove the entire directory.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository$ ls
+dummy1
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository$ rm -r dummy1
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository$ ls
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository$ 
+
+echo command is used to save data into the file(existing/new).echo is also used to print the message in the terminal.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy$ echo Hello, I am Srinath. >> dummy.txt
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy$ ls
+dummy.txt
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy$ echo "Hello Team,"
+Hello Team,
+
+cat command is used to view the file in the terminal.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy$ cat dummy.txt
+Hello, I am Srinath.
+
+vi command is used to edit the file, vi is pre installed text editor in linux.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy$ vi dummy.txt
+Hello, I am Srinath.
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+"dummy.txt" 1 line, 21 characters
+esc + :wq is used to come out of the vi text editor.
+
+sudo command stands for SuperUser do, if a command needs to be done with administrative or root privileges sudo is used.
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy$ sudo apt-get update
+[sudo] password for srinath: 
+Hit:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:3 https://download.docker.com/linux/ubuntu focal InRelease                 
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]      
+Ign:2 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 http://de.archive.ubuntu.com/ubuntu focal InRelease
+Get:6 http://de.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]     
+Hit:7 https://pkg.jenkins.io/debian-stable binary/ Release                     
+Get:8 http://de.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [24,3 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [56,5 kB]
+Get:12 http://de.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [406 kB]
+Get:13 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [760 kB]
+Get:14 http://de.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [187 kB]
+Get:15 http://de.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [264 kB]
+Get:16 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [726 kB]
+Get:17 http://de.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [536 kB]
+Get:18 http://de.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [147 kB]
+Get:19 http://de.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [281 kB]
+Get:20 http://de.archive.ubuntu.com/ubuntu focal-updates/multiverse i386 Packages [4.592 B]
+Get:21 http://de.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [15,5 kB]
+Get:22 http://de.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [2.468 B]
+Get:23 http://de.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [1.768 B]
+Fetched 3.736 kB in 7s (509 kB/s)                                              
+Reading package lists... Done
+srinath@srinath-VirtualBox:~/Desktop/Git_Local_Repository/dummy$ 
+
+
+
+
+
+
