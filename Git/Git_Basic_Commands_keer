@@ -1,10 +1,68 @@
 #Git is most widely used distributed version control system. 
 #Git makes it possible to tracks the changes made to the  files and can revert to specific versions needed
 #Git makes collaboration easier that allows the changes by multiple people to all be merged into one source.
-#i have used various resources and sites and references 
+#I have used various resources and sites and references and bookmarked  with some useful git commands i found.
+#Some of the basic commands i used and found helpful in working and understanding Git.
 ...................................................................................................
-### Create Project
-cd project/
-git init                    # initializes the repository
-git add .                   # add those 'unknown' files
-git commit                  # commit all changes, edit changelog entry
+#Setup and Configure
+git config --global user.name "username" #To link the github(server) with local git( )with useridof github
+git config -- global user.mail "mail"    #To link with email
+#To clone a repository into new directory.
+                          
+git clone ssh://git@github.com/[username]/[repository-name].git/url
+...................................................................................................
+#Creating Project 
+
+git init                               # initializes the repository
+git add                                # add the files fromwrorking directory to staging area
+        .                              #all files gets added 
+       -A                              #adds all the new files to the staging area
+git commit                             # commit all changes from staging area to local repository 
+          -m "Updated README message"  #includes the commit message 
+          
+          -am "Updated README message" #
+...........................................................................................................
+#Branching 
+git branch                             #Lists branches in repository.
+           -a                          #Lists all branches in remote repository.
+           -d                          # Delets specified branch.
+
+
+git checkout  [branch_name]              #Switch branches 
+git fetch                              #Downloads all history from the remote branches
+..............................................................................................................
+
+#merging 
+git megre branch                         #to merge the branch 
+..............................................................................................................
+#rebase
+#merge bubbles overwrittens with others' code. For a better workflow rebasing is used.
+#Rebasing is a way of rewriting history. In place of merge,Rebase does is stacks your commits on top of commits that are already pushed up
+#process of moving or combining a sequence of commits to a new base commit.
+git rebase
+
+........................................................................................................
+git mv  filename dir_name           # to move file from one dir to other    
+...........................................................................................................................
+git reset HEAD                        #changes back to workflow from staging area 
+.............................................................................................................................
+git status                               #Show the status of modified  as untarcked , staged files 
+..........................................................................................................
+
+# update all remote tracking branches, and the currently checked out branch
+git pull
+
+# push changes to github
+git push
+.....................................................................................................................
+
+fork                                      # creates repository in personal space
+...........................................................................................................................
+git diff                                 #shows the difference between the two files 
+        --staged                         #checks the difference before commit and after adding changes 
+............................................................................................................................
+git rm  filename                         #removes file directly (one step is avoided in thsi case)
+        -rf                              #to remove the complete folder
+............................................................................................................................
+git Alias                                 #used to make long commands in shorterform 
+git config --global alias .<short command > "long command" # to create alias at git global  
