@@ -1,1 +1,10 @@
-
+#Git is most widely used distributed version control system. 
+#Git makes it possible to tracks the changes made to the  files and can revert to specific versions needed
+#Git makes collaboration easier that allows the changes by multiple people to all be merged into one source.
+#i have used various resources and sites and references 
+...................................................................................................
+### Create Project
+cd project/
+git init                    # initializes the repository
+git add .                   # add those 'unknown' files
+git commit                  # commit all changes, edit changelog entry
