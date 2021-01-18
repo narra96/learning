@@ -1,0 +1,26 @@
+##the basic understanding of Devops
+DevOps approach and  change in IT culture mainly focusing on rapid  deliveryof service by  adopting of agile methodology. 
+The primary objective of DevOps:
+1.Improvising the  deployment frequency
+2. Achieve faster time to market
+3. Lower failure rate 
+4.Shorten lead time between fixes
+5.Improve mean time to recovery
+Devops enhances the te agility ,quality improves the innovation and reduce outage
+DevOps workflow automation 
+plan , define , develop, built , test, deployment results 
+Devops Principle : 
+To reduce the lead time, deployment frequency increase , robust
+continous integration focusing on  code quality
+continuous delivery  focusing on process quality 
+continous deployer  foucusing on funtional quality 
+In each face to build , checkand feedback or to deploy we have different tools.
+Choosing the Right Metrics is very cruical and one of the challenge, Limited Funds
+ Continous delivery pipeline management 
+5 phases continous development contionous testing , continous integration , continous deployment ,continous monitoring.
+product delivered by features but not complete it is generally done by 1 or 2 sprints 
+code maintained by distributed version control system ex : GIT
+Jenkins are used for CI: automated build and test
+contionous delivery and deployment helps to detect the errors quickly.
+it is not just passes tests automatically but have all the configrations necessary to push 
+continious monitoring: monitoring  of system performance and overall performance is done
