@@ -1,1 +1,1 @@
-chmod
+sudo chmod 777 /var/lib
