@@ -1,0 +1,39 @@
+Build tools are programs that automate the creation of executable applications. Build automation is automating the sequence of tasks that are to be made by developer.
+
+ Downloading dependencies -> compile source code -> running tests -> deployment 
+
+Maven is an attempt to apply patterns to a project's build infrastructure in order to promote comprehension and productivity by providing a clear path in the use of best practices. Maven is essentially a project management and comprehension tool and as such provides a way to help with managing:
+	 --> Builds
+	 --> Documentation
+	 --> Reporting
+	 --> Dependencies
+	 --> SCMs
+	 --> Releases
+	 --> Distribution
+	 --> Mailing list 
+
+ Maven makes life of developer very easy by creating reports, checks, build and testing automation setups.
+ Maven is build automation tool used to build java projects.
+
+ Primary goal of Maven:
+	 --> Project is resuable, maintainable, easier to comprehend.
+	 --> plugins or tolls interact with this type models.
+
+Maven uses Convention over Configuration. Maven creates default project structure so developers need to mention life cycle goals and project dependencies , they doesnt need to build process themselves but they need to place the files accordingly.
+
+Features of Maven:
+ 	 --> simple project setup
+ 	 --> usage in all the project
+ 	 --> Dependency management including automatic updating
+ 	 --> repositories are more
+ 	 --> Ability to easily write plugins in java
+ 	 --> Instant access to new features.
+ 	 --> Maven can build so many number of projects with predefined outputs such as jar, war, metadata
+ 	 --> maven can be able to build websites and pdfs
+ 	 --> Maven can integrate with the scs to manage the projects
+ 	 --> Maven can support its older versions
+ 	 --> Automatic parent versioning
+ 	 --> Maven can build schedule modules in parallel.
+ 	 --> Maven can report error with the error description.
+
+
