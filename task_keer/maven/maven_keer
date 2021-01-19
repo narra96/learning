@@ -43,8 +43,12 @@ default POM: Super POM
 - **Phases:stage in life cycle:**validate , complile, test, package, install,deploy 
 - **Three standard lifecycles:** clean, default(or build), site.
 ..................................................................................................
-##Cons
-If  maven code for an existing dependency is not available, then it is not possible to add. dependency at all.
+##Pros and Cons
+**Advantage**: 
+1. Same life cycle for multiple projects continuously.
+- **Diasadvantage**:
+1. If  maven code for an existing dependency is not available, then it is not possible to add. dependency at all.
+2. Cannot handle the conflicts between versions of the same library 
 ...................................................................................................
 ##Jennkins and Maven 
 -Jenkins is designed for the purpose of implementing Continuous Integration (CI)
