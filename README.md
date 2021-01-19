@@ -7,5 +7,5 @@
 Basic linux commands 
 Basic Git command and Linux commands marked important during working and learning.
 Basic overview and structure analysis of Scrum and Devops.
-##Day 2: Task 2 : Build tools
+##Day 2: Task 2 : Build tools overview
 Basic Introduction of Build tools Maven, Gradel , ANT .
