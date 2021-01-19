@@ -1,0 +1,54 @@
+#Maven
+##Maven Overview
+maven is a project management and comprehensive tool
+- provides complete build lifecycle framework.
+- simplifies and standardizes the project build process
+- handles compilation , distribution, team collabration and other tasks .
+..................................................................................................
+##Objective 
+-To provide comprehensive model for projects (Reusable,maintainable,easier to comprehend)
+-To provide Plugins / tools that interact with declarative model 
+..................................................................................................
+##What is DevOps?
+DevOps approach and  change in IT culture mainly focusing on rapid  deliveryof service by  adopting of agile methodology. 
+- Evoluton of the agile model 
+..................................................................................................
+##Project Object Model 
+- Mavel project structure and contents declared in .xml file 
+- POM is fundamental unit of entire maven system 
+- contains info about project and various configrations used to build project
+- contains goals and plugins
+- Project Notation in repository : **groupid:artifctid:version
+default POM: Super POM
+..................................................................................................
+##Features
+1. Simple project setup
+2. Consistent usage 
+3. Dependency management (includes automatic updating)
+4. Extensible 
+5. Easy and instant access to new features
+6. Model based built
+7. Using same meta data as per build process(coherence)
+8. Release management and Distribution publicatons
+9. Backward Compatability 
+10. Automatic parent versioning
+11. Parllel buils 
+12. Better error and integrity reporting
+..................................................................................................
+##Prerequisite
+-JDK 1.7 or above 
+..................................................................................................
+##Build lifecycle
+- It is a well-defined sequence of phases
+- **Phases:stage in life cycle:**validate , complile, test, package, install,deploy 
+- **Three standard lifecycles:** clean, default(or build), site.
+..................................................................................................
+##Cons
+If  maven code for an existing dependency is not available, then it is not possible to add. dependency at all.
+...................................................................................................
+##Jennkins and Maven 
+-Jenkins is designed for the purpose of implementing Continuous Integration (CI)
+-Jenkins deploys artifacts to remote repositories, they are usually Maven repositories 
+-Maven and Jenkins are distinct tools, built to fulfill distinct roles in the development lifecycle. 
+Maven is part of the process for compiling code and executing tests. Jenkins controls every stage of the CI/CD pipeline. Integration resultsin facilitating a smooth and successful DevOps landscape.
+...................................................................................................
