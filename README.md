@@ -1,6 +1,6 @@
 # Learning
 ## DevOps Training
-## Day 1: Task1: Content of the files
+### Day 1: Task1: Content of the files
 - Basic linux commands. \
 - Basic Git command and Linux commands marked important during working and learning.\
 - Basic overview and structure analysis of Scrum and Devops.\
