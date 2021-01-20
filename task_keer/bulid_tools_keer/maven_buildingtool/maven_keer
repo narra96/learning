@@ -40,7 +40,9 @@
 ..................................................................................................
 ##Build lifecycle
 - It is a well-defined sequence of phases
-- **Phases:stage in life cycle:** validate , complile, test, package, install,deploy 
+-it defines which goals need to  be executed 
+- **Phases:stage in life cycle:** prepare resources, validate , complile, test, package, install,deploy.
+- pre and post phases to register goals must run before or after aparticular phase
 - **Three standard lifecycles:** clean, default(or build), site.
 - clean :cleanup artifacts created by prior builds
 - site  :generates site documentation for project
