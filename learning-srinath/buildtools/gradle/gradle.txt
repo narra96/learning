@@ -8,4 +8,4 @@ Gradle offers to monitor and customize project configuration and execution behav
 
 Gradle can build from single projects to multi projects.
 
-Gradle can adopt to any type of structure and can convert pom files to gradle script.  
+Gradle can adopt to any type of structure and can convert pom files to gradle script.
