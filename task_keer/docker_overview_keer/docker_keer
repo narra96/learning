@@ -1,63 +1,118 @@
-#DevOps 
-##Waterfall Model 
-- Tradition delievery model
-- step by step manner 
-1. - [ ] Requirement anyalysis
-2. - [ ] Design
-3. - [ ] DEvelopment
-4. - [ ] Testing
-5. - [ ] Maintence
-***Cons***: 
-- Restart of development cycle when new requirement given by the client 
-- Lengthy 
-- Expensive 
+#Docker 
+##Docker Overview
+- Open PLatform
+- Life cyle of Docker
+1. Build: Docker build command is used after the application is configured 
+2. Shipping:Push of image making it available centrally 
+- using a binary repository[Docker Trusted Registory(DTR)]
+3. running application 
+- Docker has Docker Engine {light weighted container runtime +packaging tool for docker image } 
 ..................................................................................................
-##Agile Model
-- Allows to create a prototype to understand the client requirements 
-- Feedback loop :comprise of four key elements (plan, code, test, review )
-- Faster
-The entire process of building a software broken into small accounatble blocks called Sprints 
+##Objective 
+- To reduce the error prone 
+- To ease the maintance 
+- To elimante individual server need 
 ..................................................................................................
-##What is DevOps?
-DevOps approach and  change in IT culture mainly focusing on rapid  deliveryof service by  adopting of agile methodology. 
-- Evoluton of the agile model.
+- - Properties of docker:Isolation and portability
+- - Dockerised apps are portable
+- - Reduces gap between development, QA & production
+- - Usage: system admistrators-to provide standard environment
+- - Tracks of version of Images and Containers using git 
+- - Docker hub -private and public 
 ..................................................................................................
-##Objective
-The primary objective of DevOps:
-1. Improvising the  deployment frequency
-2. Achieve faster time to market
-3. Lower failure rate 
-4. Shorten lead time between fixes
-5. Improve mean time to recovery
+##Benifts of Docker 
+- 1.Simplicity 
+- 2. Speed
 ..................................................................................................
-##Phases
-- Consists of 5 phases :
- 1. Continous Development
- 2. Contionous Testing 
- 3. Continous Integration 
- 4. Continous Deployment 
- 5. Continous Monitoring
+##Run command 
+- docker run -d -p 80:80 docker/getting-started
+- d to run the container in the detached mode a
+
+.................................................................................................
+##Container:
+- Another process on machine that has been isolated from all other processes on the host machine. 
+- Independent qualities: 
+- single process run inside a acontainer
+- Similar to Virtual Macine(VM) 
+.................................................................................................
+##Container vs VM
+1. Containers are light weight in where VM are heavy weighted:
+-kernel of Host OS used and conatainer group  extra guest OS is not required.
+2. Isolation:conatiners use linux kernel functionalities where VM uses Hypervisor
+3. Container-Single processor , Vm :mutltiple processors run inside 
 ..................................................................................................
-Devops enhances the agility ,quality improves the innovation and reduce outage
+##Image
+-A lightweighted stand alone executable package 
+-Contains all the info to run application
 ..................................................................................................
-##Devops Principle : 
-To reduce the lead time, deployment frequency increase , robust
-1. continous integration focusing on  code quality
-2. continuous delivery  focusing on process quality 
-3. continous deployer  foucusing on funtional quality 
+##Image                                        vs               Container 
+1. Stack of unchangable layers                  : 1. Instance of image 
+2. Begin from base layer                        : 2. Isolated process on Host OS
+3. Layer: add specific config/executable file   : 3. Isolted from other containers
+4. Read only  
 ..................................................................................................
-##DevOps workflow automation 
-- plan , define , develop, built , test, deployment results 
-- In each face to build , checkand feedback or to deploy we have different tools.
-- Continous delivery pipeline management 
-- product delivered by features but not complete it is generally done by 1 or 2 sprints 
-- code maintained by distributed version control system ex : GIT
-- Jenkins are used for CI: automated build and test
-- contionous delivery and deployment helps to detect the errors quickly.
-- It is not just passes tests automatically but have all the configrations necessary to push 
-- continious monitoring: monitoring  of system performance and overall performance is done
+##Dockerfile
+- Plain text file describe the content of a Docker image 
+- Instruction  set runs while building Image 
+- Addition of instruction = Adding a new layer  
+1. 1st Instruction : FROM =defines the start off the image 
+-Empty image by using SCRATCH option 
+2. LABEL  	: maintainer 
+3. RUN    	: executed during bulid 
+4. ADD	   	: unpack archive files
+5. EXPOSE 	: link the container outside the port 
+6. VOLUME	: exposes files to the host
+7. ENVI	: environmental varibles
+8.ENTRYPOINT 	: process to run the container is started
+- Top layer 	: Container layer : Writable
+- Parent layer	: Image and Base image layer:Read only layer
 ..................................................................................................
-##Challenges:
-- Choosing the Right Metrics is very cruical 
-- Limited Funds
+## Volumes
+- A designated directory:mapped from docker host into conatiner using Unix Mount functionality 
+- Independent from container life cycle to enable data persistence and sharing
+-  Bypasses copy on write system
+- 2 types of volumes
+1. Host-Folder Volumes: 
+- mapped to specific location on host
+2. Named Volumes:created before running a container
+-Use-Cases
+1. DataPersistance : Allows data to be persisted across the container deletion
+2. IO-performance  :Bypass copy on write 
+3. Data Sharing    : Allows files to share among containers
+.................................................................................................
+##Networking
+- Allows the container communicate with client outside
+- docker run --network
+- Three N/W : 
+1. Bridge:by default at start uses(docker0) 
+2. Host:docker host machine
+3. None:In case of not allowing by another device
+- docker run --network = <NETWORK>   #to run:default n/w
+- docker network list                #to see n/w
+.................................................................................................
+##Swarm
+- Swarm ==>Docker Cluster:embedded in docker engine 
+- Manages the services and tasks
+##Features
+- High avaliabilty :conatiner run across multiple hosts
+- Service Discovery:can discover other container using container name as hostname
+- Load Balancing   :Round robin is used to another container
+- scaling of same image by multiple container setup
+- Self healing sevice 
+- Security:TLS encryption
+- docker swarm init--advertise -addr <IP_adreess>  #atttains a tocken adddress
+- docker swarm join-tocken manager        	     #used for multiple manager
+.................................................................................................
+##Docker Compose
+- Tool to define and run multi-container Docker applications
+- YAML file to configure your application
+- It contains commands that can manage the whole lifecycle of application:
+1. Start, stop, and rebuild services
+2. View the status of running services
+3. Stream the log output of running services
+4. Run a one-off command on a service
+- Three main stepsto process the compose :
+1. create a Dockerfile to define your app. 
+2. create a Compose configuration file that defines app services. 
+3. run docker-compose up #compose starts and runs the app
 .................................................................................................
