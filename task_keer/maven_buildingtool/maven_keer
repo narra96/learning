@@ -1,25 +1,25 @@
 #Maven
 ##Maven Overview
-maven is a project management and comprehensive tool
-- provides complete build lifecycle framework.
-- simplifies and standardizes the project build process
-- handles compilation , distribution, team collabration and other tasks .
+- Maven is a project management and comprehensive tool
+- Provides complete build lifecycle framework.
+- Simplifies and standardizes the project build process
+- Handles compilation , distribution, team collabration and other tasks .
 ..................................................................................................
 ##Objective 
--To provide comprehensive model for projects (Reusable,maintainable,easier to comprehend)
--To provide Plugins / tools that interact with declarative model 
-..................................................................................................
-##What is DevOps?
-DevOps approach and  change in IT culture mainly focusing on rapid  deliveryof service by  adopting of agile methodology. 
-- Evoluton of the agile model 
+1. Build process easy
+2. Uniform build
+3. Quality project information 
+4. Better devlopment Practices 
+- To provide comprehensive model for projects (Reusable,maintainable,easier to comprehend)
+- To provide Plugins / tools that interact with declarative model 
 ..................................................................................................
 ##Project Object Model 
 - Mavel project structure and contents declared in .xml file 
 - POM is fundamental unit of entire maven system 
-- contains info about project and various configrations used to build project
-- contains goals and plugins
+- Contains info about project and various configrations used to build project
+- Contains goals and plugins
 - Project Notation in repository : **groupid:artifctid:version
-default POM: Super POM
+- default POM: Super POM
 ..................................................................................................
 ##Features
 1. Simple project setup
@@ -40,8 +40,15 @@ default POM: Super POM
 ..................................................................................................
 ##Build lifecycle
 - It is a well-defined sequence of phases
-- **Phases:stage in life cycle:**validate , complile, test, package, install,deploy 
+- **Phases:stage in life cycle:** validate , complile, test, package, install,deploy 
 - **Three standard lifecycles:** clean, default(or build), site.
+- clean :cleanup artifacts created by prior builds
+- site  :generates site documentation for project
+..................................................................................................
+##Available plugins
+- Build plugins    : Executes during build,configure build element from POM
+- Reporting plugins: Executes during site generation,configure reporting element from POM
+- Maven is a plugin extension framework
 ..................................................................................................
 ##Pros and Cons
 **Advantage**: 

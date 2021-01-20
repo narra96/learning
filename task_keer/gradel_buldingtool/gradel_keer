@@ -17,29 +17,34 @@
 6. supports multi project builts 
 7. Can adopt any structure -migration eased 
 8. Graddel Wrapper:allows to execute gradel builds
-..................................................................................................
-##Groovy
-- Gradle API is designed using Groovy language-advantage of an internal DSL over XML.
-- Gradle carries its own Groovy library
-- Ads alots of methods to stańdard Java 
-..................................................................................................
+...................................................................................................
 ##Prerequisite 
 JDK version 6 or later
-..................................................................................................
+...................................................................................................
 ##Build Script
 - Builds a script file for handling projects and tasks
 - Project: library JAR or a web application or ZIP(assembeleld by jars produced by other projects)
 - Task :piece of work, which a build performs 
--Task is equalivalent to ANT target
+- Task is equalivalent to ANT target
 - DSL is provided to write bulid script
+...................................................................................................
+##Groovy
+- Gradle API is designed using Groovy language-advantage of an internal DSL over XML.
+- Gradle carries its own Groovy library
+- Add lots of methods to standard Java 
 ..................................................................................................
 ##Gradel Script
 - Consists of 2 real objects 
  1. Project Object
  - Each script is 1 or more multiple projects
  2. Script Object 
- - script code taken as classes
+ - Script code taken as classes
  - Implements script interface and then executed
+..................................................................................................
+##Benfits
+1. Allows custom dependency scope - provides better modelled and faster builds
+2. Dependency conflict resolution work with shortest path
+3. Full conflict resolution can be done , selcting highest version of dependency
 ..................................................................................................
 - Automatic access to appropriate getter and setter methods of particular by specifying its reference
 - Dependencies:things that support in building your project
@@ -47,4 +52,3 @@ JDK version 6 or later
 - Publications means the outcomes of the project
 - Publishing is based on the task define d.
 - Gradel aborts the execution and fail build as soonas any tasks fail in general to avoid this use - continue command can be used.
-..................................................................................................
