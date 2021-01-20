@@ -35,5 +35,3 @@ Features of Maven:
  	 --> Automatic parent versioning
  	 --> Maven can build schedule modules in parallel.
  	 --> Maven can report error with the error description.
-
-
