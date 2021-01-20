@@ -46,4 +46,3 @@ git reset
 
 # rm is used to remove the file from the project and the file is in staging area for commit.
 git rm 
-
