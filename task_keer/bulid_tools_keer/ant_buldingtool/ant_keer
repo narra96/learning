@@ -1,0 +1,45 @@
+#Apache ANT
+##ANT Overview
+- Open source
+- Another Neat Tool
+- Java-based build tool by Apache 
+- OS bulid and deployment tool:executed from command line  
+..................................................................................................
+##Need 
+- Apache ANT is used to automate the tasks 
+1. Compilation
+2. Packaging the binaries
+3. Deploying the binaries to the test server
+4. Testing the modifications
+5. Copying the code from one location to another
+..................................................................................................
+##Features 
+- Platform neutral 
+- Written in plain .xml
+- Automatedand complicated repiatative task 
+- Provides an interface to develop custom tasks 
+..................................................................................................
+##Configuration:
+- XML file 
+- Default : build.xml 
+- 3 blocks in default build.xml file : task ,target,extension points
+- Task   : unit of work to be done 
+- Targets: directly invoked via ANT, can specify dependencies
+..................................................................................................
+##Properties
+- Pre-defined properties are provided
+- System properties are available 
+..................................................................................................
+##Advantages:
+- Allows you to reuse the same build file
+- Allows you to perform the build in other environments 
+..................................................................................................
+- Provides a number of predefined data types
+- Generates the documentation on demand
+- Creating Web Archive (WAR) files with Ant is easy and simple
+- predefined set of tasks are present 
+- Own tasks can also be created
+..................................................................................................
+##Drawbacks
+- XML is relatively unmanageable.
+.................................................................................................

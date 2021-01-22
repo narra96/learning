@@ -1,0 +1,57 @@
+#Docker Commands 
+I have used various resources and sites and references and bookmarked  with some useful docker commands i found.
+Some of the basic commands I used and found helpful in working and understanding docker.
+................................................................................................................................................
+###run 
+docker run command 
+ -d                       	   *** Run container in background and print container ID ***
+--mount                   	   *** Attach a filesystem mount to the container *** 
+--publish list / -p               *** Publish a container's port(s) to the host ***
+--name                            *** used to give custom name to container 
+..................................................................................................................................................
+docker version                    *** Docker Client and Server versions ***
+docker --version                  *** Print version information ***
+docker login 			   *** Log in to a Docker registry ***
+docker system prune 		   *** Delete all unused containers, unused networks, and dangling images ***
+docker images                     *** List images *** 
+docker ps    			   *** container details ***
+docker ps -a | grep               *** deleted container details can be seen ***
+.................................................................................................................................................
+###Branching 
+docker container command
+create                            *** Create a container from an image ***
+start 				   *** Start an existing container ***
+run 				   *** Create a new container and start it ***
+ls       			   *** List running containers ***
+inspect   		           *** All info about a container  ***
+logs                              *** Print logs ***
+stop                              *** racefully stop running container ***
+rm				   *** Delete a stopped container ***
+..................................................................................................................................................
+docker top <conatiner name/ID>    *** Display the running processes of a container***
+docker port <conatiner name/ID>   *** shows the port of container ***
+...................................................................................................................................................
+###Swarm
+docker swarm init 		   *** initialize swarm ***
+             join                 *** Join a swarm as a node and/or manager ***
+  	     join-token   	   *** Manage join tokens ***
+             leave                ***Leave the swarm ***
+...................................................................................................................................................
+docker network  connect           *** Connect a container to a network ***
+ 		 create      	   *** Create a network ***
+  		 disconnect  	   *** Disconnect a container from a network ***
+  	         inspect          *** Display detailed information on one or more networks ***
+                 ls          	   *** List networks *** 
+                 prune            *** Remove all unused networks ***
+                 rm          	   *** Remove one or more networks ***
+...................................................................................................................................................
+docker search                     *** Search the Docker Hub for images ***
+...................................................................................................................................................
+docker image <command>
+             build                *** Build an image from a Dockerfile ***
+ 	     history        	   *** Show the history of an image ***
+ 	     push     		   *** Push an image to a remote registry.
+             ls                   *** List images
+             rm      	           *** Delete an image
+             prune       	   *** Remove unused images
+.....................................................................................................................................................

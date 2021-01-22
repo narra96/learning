@@ -1,0 +1,54 @@
+#GRADEL
+##Gradel overview
+- Gradle is a build system (open source) used to  automate building, testing, deployment etc
+- Groovy programming language was used to develop Gradle.
+- Gradel mainly  focus on Java projects.
+- Handles building and publishing the outcomes
+- Provides several built-in tasks for retrieving the information about task and the project which is helpful in understanding structure, dependencies  of build and in debugging.
+..................................................................................................
+##Features
+1. Declarative builds and build-by-convention**
+- Available with Domain Specific Langauge 
+- Provide declarative language elements 
+2. Declarative builds and build-by-convention 
+3. Structure your build
+4. monitor and customise its configuration and execution behavior using API
+5. scales the productivity 
+6. supports multi project builts 
+7. Can adopt any structure -migration eased 
+8. Graddel Wrapper:allows to execute gradel builds
+...................................................................................................
+##Prerequisite 
+JDK version 6 or later
+...................................................................................................
+##Build Script
+- Builds a script file for handling projects and tasks
+- Project: library JAR or a web application or ZIP(assembeleld by jars produced by other projects)
+- Task :piece of work, which a build performs 
+- Task is equalivalent to ANT target
+- DSL is provided to write bulid script
+...................................................................................................
+##Groovy
+- Gradle API is designed using Groovy language-advantage of an internal DSL over XML.
+- Gradle carries its own Groovy library
+- Add lots of methods to standard Java 
+..................................................................................................
+##Gradel Script
+- Consists of 2 real objects 
+ 1. Project Object
+ - Each script is 1 or more multiple projects
+ 2. Script Object 
+ - Script code taken as classes
+ - Implements script interface and then executed
+..................................................................................................
+##Benfits
+1. Allows custom dependency scope - provides better modelled and faster builds
+2. Dependency conflict resolution work with shortest path
+3. Full conflict resolution can be done , selcting highest version of dependency
+..................................................................................................
+- Automatic access to appropriate getter and setter methods of particular by specifying its reference
+- Dependencies:things that support in building your project
+- Each project conatins some dependencies 
+- Publications means the outcomes of the project
+- Publishing is based on the task define d.
+- Gradel aborts the execution and fail build as soonas any tasks fail in general to avoid this use - continue command can be used.

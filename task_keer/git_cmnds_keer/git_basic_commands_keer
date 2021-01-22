@@ -1,0 +1,67 @@
+#Git
+##Git Overview
+- Git is most widely used distributed version control system. 
+- Git makes it possible to tracks the changes made to the  files and can revert to specific versions needed
+- Git makes collaboration easier that allows the changes by multiple people to all be merged into one source.
+..............................................................................................................................................
+##Git Commands
+I have used various resources and sites and references and bookmarked  with some useful git commands i found.
+Some of the basic commands I used and found helpful in working and understanding git.
+................................................................................................................................................
+###Setup and Configure
+1. git config --global user.name "username" #To link the github(server) with local git( )with. useridof github
+2. git config -- global user.mail "mail"    #To link with email
+#To clone a repository into new directory.                     
+3. git clone ssh://git@github.com/[username]/[repository-name].git/url
+..................................................................................................................................................
+###Creating Project 
+4. git init                               	*** initializes the repository***
+5. git add                               	*** add the files from wrorking directory to staging area ***
+            .                              	*** all files gets added ***
+           -A                              	*** adds all the new files to the staging area ***
+6. git commit                             	*** commit changes from staging area to local repository
+             -m "Updated README message"  	*** includes the commit message ***
+          
+             -am "Updated README message" 	*** all changes in working directory will be commited***
+.................................................................................................................................................
+###Branching 
+7. git branch                             	*** Lists branches in repository***
+             -a                         	*** Lists all branches in remote repository***
+             -d                         	***Delets specified branch.
+8. git checkout  [branch_name]            	*** Switch branches ***
+9. git fetch                              	*** Downloads all history from the remote branches***
+..................................................................................................................................................
+###merging 
+10.git megre branch                         	*** to merge the branch 
+...................................................................................................................................................
+###rebase
+- merge bubbles overwrittens with others' code. For a better workflow rebasing is used.
+- Rebasing is a way of rewriting history. In place of merge,Rebase does is stacks your commits on top of commits that are already pushed up
+- process of moving or combining a sequence of commits to a new base commit.
+11. git rebase					*** 
+...................................................................................................................................................
+12. git mv  filename dir_name                 *** to move file from one dir to other   *** 
+...................................................................................................................................................
+13. git reset HEAD                       	*** changes back to workflow from staging area ***
+...................................................................................................................................................
+14. git status                                *** Show the status of modified  as untarcked , staged files ***
+...................................................................................................................................................
+15. git pull 					*** update all remote tracking branches, and the currently checked out branch***		
+16. git push					*** push changes to github ***
+...................................................................................................................................................
+17. fork                                    	*** creates repository in personal space *** 
+...................................................................................................................................................
+18. git diff                                 	*** shows the difference between the two files  *** 
+        --staged                        	*** checks the difference before commit and after adding changes ***  
+19. git stash                             	*** changes are temporary stored from working directory that are not committed *** 
+...................................................................................................................................................
+20. git rm   filename                        	*** removes file directly (one step is avoided in thsi case) *** 
+          -rf                            	*** to remove the complete folder *** 
+...................................................................................................................................................
+21. git Alias                                     *** used to make long commands in shorterform  *** 
+22. git config --global alias .<short command > "long command" *** to create alias at git global  *** 
+...................................................................................................................................................
+Ignored files are tracked by .gitignore that is checkedin at the root of your repository
+23. .gitignore                                    *** file which Git has been explicitly told to ignore *** 
+.gitignore file must be edited and committed manually when new files are added that need to ignore
+....................................................................................................................................................

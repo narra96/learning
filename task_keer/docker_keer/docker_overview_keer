@@ -1,0 +1,118 @@
+#Docker 
+##Docker Overview
+- Open PLatform
+- Life cyle of Docker
+1. Build: Docker build command is used after the application is configured 
+2. Shipping:Push of image making it available centrally 
+- using a binary repository[Docker Trusted Registory(DTR)]
+3. running application 
+- Docker has Docker Engine {light weighted container runtime +packaging tool for docker image } 
+..................................................................................................
+##Objective 
+- To reduce the error prone 
+- To ease the maintance 
+- To elimante individual server need 
+..................................................................................................
+- - Properties of docker:Isolation and portability
+- - Dockerised apps are portable
+- - Reduces gap between development, QA & production
+- - Usage: system admistrators-to provide standard environment
+- - Tracks of version of Images and Containers using git 
+- - Docker hub -private and public 
+..................................................................................................
+##Benifts of Docker 
+- 1.Simplicity 
+- 2. Speed
+..................................................................................................
+##Run command 
+- docker run -d -p 80:80 docker/getting-started
+- d to run the container in the detached mode a
+
+.................................................................................................
+##Container:
+- Another process on machine that has been isolated from all other processes on the host machine. 
+- Independent qualities: 
+- single process run inside a acontainer
+- Similar to Virtual Macine(VM) 
+.................................................................................................
+##Container vs VM
+1. Containers are light weight in where VM are heavy weighted:
+-kernel of Host OS used and conatainer group  extra guest OS is not required.
+2. Isolation:conatiners use linux kernel functionalities where VM uses Hypervisor
+3. Container-Single processor , Vm :mutltiple processors run inside 
+..................................................................................................
+##Image
+-A lightweighted stand alone executable package 
+-Contains all the info to run application
+..................................................................................................
+##Image                                        vs               Container 
+1. Stack of unchangable layers                  : 1. Instance of image 
+2. Begin from base layer                        : 2. Isolated process on Host OS
+3. Layer: add specific config/executable file   : 3. Isolted from other containers
+4. Read only  
+..................................................................................................
+##Dockerfile
+- Plain text file describe the content of a Docker image 
+- Instruction  set runs while building Image 
+- Addition of instruction = Adding a new layer  
+1. 1st Instruction : FROM =defines the start off the image 
+-Empty image by using SCRATCH option 
+2. LABEL  	: maintainer 
+3. RUN    	: executed during bulid 
+4. ADD	   	: unpack archive files
+5. EXPOSE 	: link the container outside the port 
+6. VOLUME	: exposes files to the host
+7. ENVI	: environmental varibles
+8.ENTRYPOINT 	: process to run the container is started
+- Top layer 	: Container layer : Writable
+- Parent layer	: Image and Base image layer:Read only layer
+..................................................................................................
+## Volumes
+- A designated directory:mapped from docker host into conatiner using Unix Mount functionality 
+- Independent from container life cycle to enable data persistence and sharing
+-  Bypasses copy on write system
+- 2 types of volumes
+1. Host-Folder Volumes: 
+- mapped to specific location on host
+2. Named Volumes:created before running a container
+-Use-Cases
+1. DataPersistance : Allows data to be persisted across the container deletion
+2. IO-performance  :Bypass copy on write 
+3. Data Sharing    : Allows files to share among containers
+.................................................................................................
+##Networking
+- Allows the container communicate with client outside
+- docker run --network
+- Three N/W : 
+1. Bridge:by default at start uses(docker0) 
+2. Host:docker host machine
+3. None:In case of not allowing by another device
+- docker run --network = <NETWORK>   #to run:default n/w
+- docker network list                #to see n/w
+.................................................................................................
+##Swarm
+- Swarm ==>Docker Cluster:embedded in docker engine 
+- Manages the services and tasks
+##Features
+- High avaliabilty :conatiner run across multiple hosts
+- Service Discovery:can discover other container using container name as hostname
+- Load Balancing   :Round robin is used to another container
+- scaling of same image by multiple container setup
+- Self healing sevice 
+- Security:TLS encryption
+- docker swarm init--advertise -addr <IP_adreess>  #atttains a tocken adddress
+- docker swarm join-tocken manager        	     #used for multiple manager
+.................................................................................................
+##Docker Compose
+- Tool to define and run multi-container Docker applications
+- YAML file to configure your application
+- It contains commands that can manage the whole lifecycle of application:
+1. Start, stop, and rebuild services
+2. View the status of running services
+3. Stream the log output of running services
+4. Run a one-off command on a service
+- Three main stepsto process the compose :
+1. create a Dockerfile to define your app. 
+2. create a Compose configuration file that defines app services. 
+3. run docker-compose up #compose starts and runs the app
+.................................................................................................

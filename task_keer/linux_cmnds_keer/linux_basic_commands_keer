@@ -1,0 +1,76 @@
+###Linux
+##Linux overview
+- Open-source operating system
+- Linux distributions: Ubuntu,CentOS,Debian,Red Hat
+- Flexibilty made it usage from embedded products to supercomputing servers. 
+- Major impact in IT field
+- Adaptablity and cheap characteristics made it sucusseful
+- Longevity, maturity and security made it most trustable OS available 
+......................................................................................................
+##Linux commands
+###Some of book marked sites with useful Linux commands.
+some of the basic commands used and found helpful in working and understanding Linux
+###source
+- * https://ubuntu.com/tutorials/command-line-for-beginners#1-overview *
+- * https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/ *
+The Linux command line is a text interface to computer
+.......................................................................................................
+###listing
+1. ls  			       *** List files in the current director ***               
+  -l  			       *** long listing *** 
+  -a 			       *** lists all files includes hidden files and folders *** 
+.......................................................................................................
+###directory
+2. mkdir                         *** To create a directory   *** 
+3. cd / 			       *** To change the directory *** 
+   ~                          *** starting from the root directory *** 
+   ..          	       *** To go back from a folder to the folder before  *** 
+4. pwd  			       *** Shows the current directory path *** 
+........................................................................................................
+5. cat   [filename]   	       *** Concatenate and display the content of file *** 
+........................................................................................................
+###remove
+6. rm 			       *** to delete files and directories *** 
+   -f [file]                  *** force remove file
+........................................................................................................
+###SuperUser Do
+Allow a user with proper permissions to execute a command as another user
+7. sudo
+.........................................................................................................
+###alter permissions
+To make a file executable and to change the permissions granted to it
+To sets the file permissions based on flags for a file or folder. 
+The flags define who[owner,group,world] can read, write to or execute the file.
+chmod changes the file mode of each specified FILE according to MODE can be symbolic or octal
+read (4)(r),write(2) ( w), execute(1) ( x)
+8. chmod [permissions] [filename]  *** changes the permissionof file ***
+..........................................................................................................
+9. curl [URL...]       		 *** Retrieve a web page and display in the terminal *** 
+..........................................................................................................
+###chanage of owner
+10. chown [options] filename 	 *** Allows to change the owner and group owner of a file ***
+..........................................................................................................
+#### compress and decompress file 
+11. gzip file 			 *** compresses file and .gz file generated
+12. gzip -d  <file>.gz   		 *** decompresses .gz file back to original
+............................................................
+13. touch <newfile>      		 *** To create a file *** 
+...........................................................................................................
+###Disk Free
+To see the available disk space in each of the partitions in your system
+14. df
+...........................................................................................................
+15. apt to work with packages  
+This is need root privilages so sudo command is 
+16. sudo apt-get          		 *** apt-get used  to intall ***
+...........................................................................................................
+To move data into file 
+To print message in terminal
+17. echo [string]
+...........................................................................................................
+18. wget <file>  			 *** To download file  *** 
+...........................................................................................................
+### Process Management 
+19. ps 				*** display your currently active processes
+20. top 				*** display all running processes
+...........................................................................................................

@@ -1,0 +1,63 @@
+#DevOps 
+##Waterfall Model 
+- Tradition delievery model
+- step by step manner 
+1. - [ ] Requirement anyalysis
+2. - [ ] Design
+3. - [ ] DEvelopment
+4. - [ ] Testing
+5. - [ ] Maintence
+***Cons***: 
+- Restart of development cycle when new requirement given by the client 
+- Lengthy 
+- Expensive 
+..................................................................................................
+##Agile Model
+- Allows to create a prototype to understand the client requirements 
+- Feedback loop :comprise of four key elements (plan, code, test, review )
+- Faster
+The entire process of building a software broken into small accounatble blocks called Sprints 
+..................................................................................................
+##What is DevOps?
+DevOps approach and  change in IT culture mainly focusing on rapid  deliveryof service by  adopting of agile methodology. 
+- Evoluton of the agile model.
+..................................................................................................
+##Objective
+The primary objective of DevOps:
+1. Improvising the  deployment frequency
+2. Achieve faster time to market
+3. Lower failure rate 
+4. Shorten lead time between fixes
+5. Improve mean time to recovery
+..................................................................................................
+##Phases
+- Consists of 5 phases :
+ 1. Continous Development
+ 2. Contionous Testing 
+ 3. Continous Integration 
+ 4. Continous Deployment 
+ 5. Continous Monitoring
+..................................................................................................
+Devops enhances the agility ,quality improves the innovation and reduce outage
+..................................................................................................
+##Devops Principle : 
+To reduce the lead time, deployment frequency increase , robust
+1. continous integration focusing on  code quality
+2. continuous delivery  focusing on process quality 
+3. continous deployer  foucusing on funtional quality 
+..................................................................................................
+##DevOps workflow automation 
+- plan , define , develop, built , test, deployment results 
+- In each face to build , checkand feedback or to deploy we have different tools.
+- Continous delivery pipeline management 
+- product delivered by features but not complete it is generally done by 1 or 2 sprints 
+- code maintained by distributed version control system ex : GIT
+- Jenkins are used for CI: automated build and test
+- contionous delivery and deployment helps to detect the errors quickly.
+- It is not just passes tests automatically but have all the configrations necessary to push 
+- continious monitoring: monitoring  of system performance and overall performance is done
+..................................................................................................
+##Challenges:
+- Choosing the Right Metrics is very cruical 
+- Limited Funds
+.................................................................................................

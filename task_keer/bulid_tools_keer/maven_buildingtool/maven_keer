@@ -1,0 +1,67 @@
+#Maven
+##Maven Overview
+- Maven is a project management and comprehensive tool
+- Provides complete build lifecycle framework.
+- Simplifies and standardizes the project build process
+- Handles compilation , distribution, team collabration and other tasks .
+..................................................................................................
+##Objective 
+1. Build process easy
+2. Uniform build
+3. Quality project information 
+4. Better devlopment Practices 
+- To provide comprehensive model for projects (Reusable,maintainable,easier to comprehend)
+- To provide Plugins / tools that interact with declarative model 
+..................................................................................................
+##Project Object Model 
+- Mavel project structure and contents declared in .xml file 
+- POM is fundamental unit of entire maven system 
+- Contains info about project and various configrations used to build project
+- Contains goals and plugins
+- Project Notation in repository : **groupid:artifctid:version
+- default POM: Super POM
+..................................................................................................
+##Features
+1. Simple project setup
+2. Consistent usage 
+3. Dependency management (includes automatic updating)
+4. Extensible 
+5. Easy and instant access to new features
+6. Model based built
+7. Using same meta data as per build process(coherence)
+8. Release management and Distribution publicatons
+9. Backward Compatability 
+10. Automatic parent versioning
+11. Parllel buils 
+12. Better error and integrity reporting
+..................................................................................................
+##Prerequisite
+-JDK 1.7 or above 
+..................................................................................................
+##Build lifecycle
+- It is a well-defined sequence of phases
+-it defines which goals need to  be executed 
+- **Phases:stage in life cycle:** prepare resources, validate , complile, test, package, install,deploy.
+- pre and post phases to register goals must run before or after aparticular phase
+- **Three standard lifecycles:** clean, default(or build), site.
+- clean :cleanup artifacts created by prior builds
+- site  :generates site documentation for project
+..................................................................................................
+##Available plugins
+- Build plugins    : Executes during build,configure build element from POM
+- Reporting plugins: Executes during site generation,configure reporting element from POM
+- Maven is a plugin extension framework
+..................................................................................................
+##Pros and Cons
+**Advantage**: 
+1. Same life cycle for multiple projects continuously.
+- **Diasadvantage**:
+1. If  maven code for an existing dependency is not available, then it is not possible to add. dependency at all.
+2. Cannot handle the conflicts between versions of the same library 
+...................................................................................................
+##Jennkins and Maven 
+-Jenkins is designed for the purpose of implementing Continuous Integration (CI)
+-Jenkins deploys artifacts to remote repositories, they are usually Maven repositories 
+-Maven and Jenkins are distinct tools, built to fulfill distinct roles in the development lifecycle. 
+Maven is part of the process for compiling code and executing tests. Jenkins controls every stage of the CI/CD pipeline. Integration resultsin facilitating a smooth and successful DevOps landscape.
+...................................................................................................
