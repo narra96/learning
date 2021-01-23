@@ -50,11 +50,11 @@ docker container stop <containername/containerId>
 #build command is used to build image from dockerfile / url 
 docker build -f <pathtoaDockerfile>
 
-#pull command is used to pull images from docker hub.
-docker pull <imagename>
+#push command is used to pull images from docker hub.
+docker push <imagename>
 
 #tag command is used to give tag to existing image.
-docker tag <oldname/newname:tag>
+docker tag <oldname> <newname:tag>
 
 #prune command is used to remove the stopped containers.
 docker container prune.
